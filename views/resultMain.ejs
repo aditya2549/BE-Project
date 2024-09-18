@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <title>Report - Blood Cell Identification</title>
+</head>
+
+<body>
+
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+
+        nav {
+            background-color: #e74c3c;
+            /* Red color for the navigation bar */
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav h1 {
+            margin: 0;
+            font-size: 24px;
+            color: #000;
+            /* Black color for the project name text */
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            background-color: #fff;
+        }
+
+        h2 {
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 24px;
+            text-align: center;
+        }
+
+        .patient-info {
+            padding: 20px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .patient-info p {
+            margin: 10px 0;
+        }
+
+        .blood-cell-image img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .cell-counts {
+            padding: 20px;
+        }
+
+        .cell-counts p {
+            margin: 10px 0;
+        }
+
+        .download-report a {
+            display: block;
+            background-color: #e74c3c;
+            /* Red color for the download button */
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s ease-in-out;
+        }
+
+        .download-report a:hover {
+            background-color: #c0392b;
+            /* Darker red on hover */
+        }
+    </style>
+    <nav>
+        <div class="container">
+            <h1>Blood Cell Identification and Count Using YOLO</h1>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h2>Patient Report</h2>
+
+        <div class="patient-info">
+            <p><strong>Patient Name:</strong>
+                <%= patientName %>
+            </p>
+            <p><strong>Patient Age:</strong>
+                <%= patientAge %>
+            </p>
+            <p><strong>Patient Gender:</strong>
+                <%= patientemail %>
+            </p>
+        </div>
+
+        <div class="blood-cell-image">
+            <!-- <img src="path/to/identified_image.jpg" alt="Identified Blood Cell Image"> -->
+        </div>
+
+    <div class="cell-counts">
+        <div class="cell-info">
+            <p><strong>RBC Count:</strong> <span id="rbcCount">
+                    <%= rbcCount %>
+                </span></p>
+        </div>
+        <div class="cell-info">
+            <p><strong>WBC Count:</strong> <span id="wbcCount">
+                    <%= wbcCount %>
+                </span></p>
+        </div>
+        <div class="cell-info">
+            <p><strong>Platelets Count:</strong> <span id="plateletsCount">
+                    <%= plateletsCount %>
+                </span></p>
+        </div>
+    
+        <hr />
+    
+        <div class="cell-info">
+            <p><strong>Total Count:</strong> <span id="totalCount">
+                    <%= counts %>
+                </span></p>
+        </div>
+    </div>
+
+
+
+        <style>
+            .cell-counts {
+                background-color: #f9f9f9;
+                /* Light gray background */
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                /* Shadow effect */
+            }
+
+            .cell-counts p {
+                margin: 0;
+                /* Remove default paragraph margins */
+                padding-bottom: 10px;
+                /* Add spacing between paragraphs */
+            }
+
+            .cell-counts strong {
+                font-weight: bold;
+                /* Make text bold */
+            }
+
+            .cell-counts hr {
+                border: none;
+                /* Remove default border */
+                border-top: 1px solid #ddd;
+                /* Add horizontal line separator */
+                margin: 15px 0;
+                /* Add spacing above and below the separator */
+            }
+
+            /* Target the spans inside the paragraphs for consistent styling */
+            .cell-counts span {
+                color: #007bff;
+                /* Blue color for counts */
+                font-weight: bold;
+                /* Make counts bold */
+            }
+        </style>
+        <div class="download-report">
+            <a href="path/to/report.pdf" download="Patient_Report_John_Doe.pdf">Download Full Report (PDF)</a>
+        </div>
+    </div>
+    <!-- Other HTML content -->
+
+    <!-- <link rel="stylesheet" href="styles2.css"> -->
+
+</body>
+
+</html>
+
+<!-- <script src="script2.js"></script> -->
+</body>
+
+</html>
